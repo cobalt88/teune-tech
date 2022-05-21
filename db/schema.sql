@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS teune_tech;
+
+CREATE DATABASE teune_tech;
