@@ -13,5 +13,23 @@
   "devDependencies": {
     "jest": "^28.1.0",
     "nodemon": "^2.0.16"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "teune-tech",
+  "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cobalt88/teune-tech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cobalt88/teune-tech/issues"
+  },
+  "homepage": "https://github.com/cobalt88/teune-tech#readme"
 }

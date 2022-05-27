@@ -1,8 +1,8 @@
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
-const exphbs = require('express-handlebars');
-
+const expressHbs = require('express-handlebars');
+const errorPage = require('./controllers/controllerFunctions/errorController');
 const app = express();
 const PORT = process.env.PORT || 3010;
 
@@ -23,22 +23,24 @@ app.use(session(sess));
 
 const helpers = require('./utils/helpers');
 const bodyParser = require('body-parser');
-const hbs = exphbs.create({helpers});
+const hbs = expressHbs.create({ helpers });
 
 app.engine(
   'hbs',
-  exphbs.engine({
-    layoutsDir: 'views/layouts/',
+  expressHbs.engine({
+    layoutsDir: 'views/layouts',
     defaultLayout: 'main-layout',
     extname: 'hbs'
   })
 );
-app.set('view engine', 'handlebars');
+app.set('view engine', 'hbs');
+app.set('views', 'views')
+app.use(errorPage.get404);
 
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(require('./controllers/'));
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log(`Server listening at http://localhost:${PORT}`));
 });
