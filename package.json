@@ -7,7 +7,9 @@
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "handlebars": "^4.7.7",
+    "jquery": "^3.6.0",
     "mysql2": "^2.3.3",
+    "popper.js": "^1.16.1",
     "sequelize": "^6.19.2"
   },
   "devDependencies": {
