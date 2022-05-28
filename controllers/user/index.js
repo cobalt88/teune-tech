@@ -10,7 +10,7 @@ const error = require('../error');
 router.use('/user', userRoutes);
 router.use('/dashboard', dashboardRoutes);
 router.use('/comments', commentRoutes);
-router.use('/home', homeRoutes);
+router.use('/', homeRoutes);
 router.use(error.get404);
 
 module.exports = router;

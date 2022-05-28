@@ -9,28 +9,25 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <!-- HOME/MAIL LANDING PAGE -->
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <!-- USER DASHBOARD LINK -->
-              <a class="nav-link" href="#">Dashboard</a>
+              <a class="nav-link active" aria-current="page" href="http://localhost:3010/">Home</a>
             </li>
             <li class="nav-item">
               <!-- ABOUT -->
               <a class="nav-link" href="#">About TT</a>
             </li>
+            {{#if loggedIn}}
             <li class="nav-item">
-              <!-- DESCRIPTION -->
-              <a class="nav-link" href="#">Link</a>
+              <!-- USER DASHBOARD LINK -->
+              <a class="nav-link" href="#">Dashboard</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            </ul>
+              {{> userLogout }}
+
+              {{else}}
+            </ul>
+              {{> userLogin }}
+
+            {{/if}}
         </div>
       </div>
     </nav>
