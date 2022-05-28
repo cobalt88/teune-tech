@@ -8,7 +8,7 @@ router.get('/', (req, res, next) => {
     adminCSS: false,
     mainJS: true,
     errorJS: false,
-    loggedIn: true,
+    loggedIn: false,
     })
   })
 
