@@ -16,16 +16,8 @@ Comment.init(
       allowNull: false,
     },
     body: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
-    },
-    tags: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'Tag',
-        key: 'id'
-      }
     },
     userId: {
       type: DataTypes.INTEGER,
@@ -35,7 +27,8 @@ Comment.init(
       }
     },
     postId: {
-            type: DataTypes.INTEGER,
+      type: DataTypes.INTEGER,
+      allowNull: false,
       references: {
         model: 'post',
         key: 'id'

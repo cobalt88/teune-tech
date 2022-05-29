@@ -24,4 +24,4 @@ Tag.init(
   }
 );
 
-module.exports = Tag
+module.exports = Tag  

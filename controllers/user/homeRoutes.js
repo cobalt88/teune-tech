@@ -9,13 +9,13 @@ router.get('/', (req, res, next) => {
     adminCSS: false,
     mainJS: true,
     errorJS: false,
-    loggedIn: false,
     })
   })
 
   router.post('/login', async(req, res, next) => {
     try{
       const dbUserData = await User.findOne({
+        logging: console.log,
         where: {
           email: req.body.userEmail
         },

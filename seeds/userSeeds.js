@@ -91,6 +91,12 @@ const userData = [
     email: 'alice@bob.com',
     password: 'Iforgot!',
     is_admin: false
+  },
+  {
+    username: 'Kuzco',
+    email: 'kuzco@notouchy.com',
+    password: 'Iforgot!',
+    is_admin: false
   }
 ];
 
