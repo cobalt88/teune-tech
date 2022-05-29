@@ -247,3 +247,6 @@ Letting go can be difficult, but you’ll torture yourself mentally and emotiona
 
 },  
 ]
+
+const postSeeds = () => Post.bulkCreate(postData);
+module.exports = postSeeds;
