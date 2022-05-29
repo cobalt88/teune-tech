@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "seed": "node seeds/userSeeds"
+    "seed": "node seeds/index.js"
   },
   "name": "teune-tech",
   "description": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",

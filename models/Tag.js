@@ -14,6 +14,8 @@ Tag.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+  },
+  {
     sequelize,
     timestamps: true,
     freezeTableName: true,

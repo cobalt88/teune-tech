@@ -49,6 +49,8 @@ Post.init(
         key: 'id'
       }
     },
+  },
+  {
     sequelize,
     timestamps: true,
     freezeTableName: true,
