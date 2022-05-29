@@ -50,15 +50,6 @@ Post.init(
         key: 'id'
       }
     },
-    
-    category: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: 'comment',
-        key: 'id'
-      }
-    }
   },
   {
     sequelize,
