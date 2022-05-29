@@ -93,3 +93,6 @@ const userdata = [
     isAdmin: false
   }
 ];
+
+const userSeeds = () => User.bulkCreate(userdata, {individualHooks: true});
+module.exports = userSeeds;
