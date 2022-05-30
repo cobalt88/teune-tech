@@ -16,7 +16,7 @@
  ## Overall Description 
  - - - 
 
-I have a problem. And that problem is I get distracted. A lot. And when I get distracted or go on a random tangent, I tend to follow a single thread of an idea way farther than i should, until I land in some weird territory where I have no idea whats going on and no idea how to ask the right questions. These tangents are something ive begun to refer to as rabbit holes, and theyre a great learning experience, but more often than not the information uncovered or discovered ends up getting lost. Tahts where this application comes in. Teune Tech Blog is the babay version of what will eventually be a much larger idea, but for now its somewhere to store the record of my rabbit hole adventures and quests for answers on whatever shiny bit of something catches my attention on any particular day. Enjoy!
+I have a problem. And that problem is I get distracted. A lot. And when I get distracted or go on a random tangent, I tend to follow a single thread of an idea way farther than i should, until I land in some weird territory where I have no idea whats going on and no idea how to ask the right questions. These tangents are something ive begun to refer to as rabbit holes, and they're a great learning experience, but more often than not the information uncovered or discovered ends up getting lost. Thats where this application comes in. Teune Tech Blog is the baby version of what will eventually be a much larger idea, but for now its somewhere to store the record of my rabbit hole adventures and quests for answers on whatever shiny bit of something catches my attention on any particular day. Enjoy!
 
  ![Alt text]()
 

@@ -22,22 +22,16 @@ Post.init(
     category: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      references: {
-        model: 'Category',
-        key: 'id'
-      }
+
     },
     tags: {
       type: DataTypes.INTEGER,
       allowNull: true,
-      references: {
-        model: 'Tag',
-        key: 'id'
-      }
+
     },
     post_url: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         isURL: true
       }

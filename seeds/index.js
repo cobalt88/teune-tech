@@ -3,6 +3,7 @@ const seedUsers = require('./userSeeds');
 const seedTags = require('./tagSeeds');
 const seedCategory = require('./categorySeeds');
 const seedComments = require('./commentSeeds');
+const seedPosts = require('./postSeeds');
 
 
 const seedAll = async () => {
@@ -10,11 +11,15 @@ const seedAll = async () => {
   console.log('--------------');
   await seedUsers();
 
-  await seedTags();
-
   await seedCategory();
 
-  await seedComments();
+  await seedPosts();
+
+  await seedTags();
+
+  await seedComments();  
+
+
 
   process.exit(0);
 
